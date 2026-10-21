@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Фон: тёмно-синий градиент -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#2C8DCE"/>
+      <stop offset="100%" stop-color="#143E63"/>
+    </linearGradient>
+
+    <!-- Линза: светлый градиент -->
+    <linearGradient id="glassGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#F5FAFF"/>
+      <stop offset="100%" stop-color="#C8DCEA"/>
+    </linearGradient>
+
+    <!-- Жёлтый ободок лупы -->
+    <linearGradient id="rimGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFD45E"/>
+      <stop offset="100%" stop-color="#E09A10"/>
+    </linearGradient>
+
+    <!-- Блик на линзе -->
+    <radialGradient id="shine" cx="0.35" cy="0.30" r="0.55">
+      <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Фон: скруглённый квадрат -->
+  <rect x="8" y="8" width="240" height="240" rx="44" ry="44" fill="url(#bgGrad)"/>
+
+  <!-- Декоративные дорожки на фоне (намёк на схему) -->
+  <g fill="none" stroke="#3DA0DB" stroke-width="3" stroke-linecap="round" opacity="0.35">
+    <path d="M 24 72  H 52  L 68 88"/>
+    <path d="M 232 72 H 204 L 188 88"/>
+    <path d="M 24 184 H 52  L 68 168"/>
+    <path d="M 232 184 H 204 L 188 168"/>
+    <circle cx="68" cy="88"  r="3" fill="#3DA0DB"/>
+    <circle cx="188" cy="88" r="3" fill="#3DA0DB"/>
+    <circle cx="68" cy="168" r="3" fill="#3DA0DB"/>
+    <circle cx="188" cy="168" r="3" fill="#3DA0DB"/>
+  </g>
+
+  <!-- Рукоятка лупы (позади ободка) -->
+  <line x1="164" y1="164" x2="206" y2="206"
+        stroke="url(#rimGrad)" stroke-width="22" stroke-linecap="round"/>
+  <line x1="164" y1="164" x2="206" y2="206"
+        stroke="#FFE9A8" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Ободок лупы -->
+  <circle cx="120" cy="120" r="62" fill="url(#rimGrad)"/>
+  <!-- Линза -->
+  <circle cx="120" cy="120" r="52" fill="url(#glassGrad)" stroke="#143E63" stroke-width="2"/>
+
+  <!-- Внутри линзы — чип -->
+  <rect x="94" y="94" width="52" height="52" rx="6"
+        fill="none" stroke="#143E63" stroke-width="4"/>
+  <!-- Пин 1 (метка) -->
+  <circle cx="104" cy="104" r="4" fill="#143E63"/>
+  <!-- Ядро -->
+  <rect x="108" y="108" width="24" height="24" rx="3" fill="#2C8DCE"/>
+  <!-- Выводы -->
+  <g stroke="#143E63" stroke-width="4" stroke-linecap="round">
+    <line x1="94"  y1="112" x2="82"  y2="112"/>
+    <line x1="94"  y1="128" x2="82"  y2="128"/>
+    <line x1="146" y1="112" x2="158" y2="112"/>
+    <line x1="146" y1="128" x2="158" y2="128"/>
+    <line x1="112" y1="94"  x2="112" y2="82"/>
+    <line x1="128" y1="94"  x2="128" y2="82"/>
+    <line x1="112" y1="146" x2="112" y2="158"/>
+    <line x1="128" y1="146" x2="128" y2="158"/>
+  </g>
+
+  <!-- Блик на линзе -->
+  <ellipse cx="100" cy="98" rx="28" ry="20" fill="url(#shine)"/>
+</svg>
