@@ -22,14 +22,11 @@
 
 ### Скриншоты
 
-![Главное окно KiCadFinder](doc/kicad-finder-1.jpg)
-*Поиск компонентов по всем библиотекам*
+![KiCadFinder](doc/kicad-finder-1.jpg)
 
-![Результаты поиска](doc/kicad-finder-2.jpg)
-*Сужение списка библиотек и отображение совпадений*
+![KiCadFinder](doc/kicad-finder-2.jpg)
 
-![Диалог «О программе»](doc/kicad-finder-3.jpg)
-*Подробная информация о сборке*
+![KiCadFinder](doc/kicad-finder-3.jpg)
 
 ---
 
@@ -53,14 +50,11 @@ The app supports English and Russian, remembers your symbols directory, and runs
 
 ### Screenshots
 
-![KiCadFinder main window](doc/kicad-finder-1.jpg)
-*Searching components across all libraries*
+![KiCadFinder](doc/kicad-finder-1.jpg)
 
-![Search results](doc/kicad-finder-2.jpg)
-*Narrowed library list and matching components*
+![KiCadFinder](doc/kicad-finder-2.jpg)
 
-![About dialog](doc/kicad-finder-3.jpg)
-*Detailed build information*
+![KiCadFinder](doc/kicad-finder-3.jpg)
 
 ---
 
